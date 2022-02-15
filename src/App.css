@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.chat {
+    height: 150vh;
+    background-color: black;
+    background: rgb(0,251,191);
+    background: radial-gradient(circle, rgba(0,251,191,1) 0%, rgba(53,192,201,1) 51%, rgba(0,251,191,1) 100%);
+}
+
+h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.chat__container {
+    background-color: white;
+    width: 60%;
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10rem auto;
+    flex-direction: column;
+    background: #d16401;
+    /* background: radial-gradient(circle, rgba(255,161,3,1) 0%, rgba(131,3,26,1) 100%); */
+    border-radius: 15px;
+    font-size: 1.2em;
+}
+.contaienr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 90%;
+    height: 10rem;
+    background-color:cornsilk;
+    margin: 1.2rem auto;
+    border-radius: 15px;
+}
+
+.card__message {
+    width: 90%;
+    margin: auto;
+    margin: 2rem 2rem 2rem auto;
+}
+.card__group  {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    margin: auto auto 1rem auto;
+    justify-content: flex-start;
+}

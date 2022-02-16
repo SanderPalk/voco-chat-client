@@ -2,6 +2,8 @@ import React from 'react';
 import '../App.css';
 import data from '../data.json';
 import ChatCard from './ChatCard';
+import Input from './Input';
+import Name from './Name';
 
 const Chat: React.FC = () => {
     return (
@@ -15,7 +17,14 @@ const Chat: React.FC = () => {
                     )
                 })}
 
+                <div className='input'>
+                    <Input />
+                    <Name />
+                </div>
             </div>
+
+            
+
         </div>
     );
 }

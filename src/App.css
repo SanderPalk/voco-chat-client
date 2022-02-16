@@ -25,13 +25,13 @@ h3 {
 .chat__container {
     background-color: white;
     width: 60%;
-    height: 70rem;
+    height: 65%;
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 10rem auto;
+    margin: 5rem auto;
     flex-direction: column;
-    background: #d16401;
+    background: #2e2e2e;
     /* background: radial-gradient(circle, rgba(255,161,3,1) 0%, rgba(131,3,26,1) 100%); */
     border-radius: 15px;
     font-size: 1.2em;
@@ -43,13 +43,14 @@ h3 {
 }
 .card {
     width: 90%;
-    height: 10rem;
+    height: 14%;
     background-color:cornsilk;
-    margin: 1.2rem auto;
+    margin: 1rem auto;
     border-radius: 15px;
 }
 
 .card__message {
+    font-size: 1rem;
     width: 90%;
     margin: auto;
     margin: 2rem 2rem 2rem auto;
@@ -61,4 +62,16 @@ h3 {
     margin: auto;
     margin: auto auto 1rem auto;
     justify-content: flex-start;
+}
+
+.input textarea {
+    margin-top: 3%;
+    margin-left: 25%;
+    display: flex;
+    background-color: darkgray;
+    height: 600px;
+    width: 75%;
+    border-radius: 10px;
+    resize: none;
+    font-size: 2rem;
 }

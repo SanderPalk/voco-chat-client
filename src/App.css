@@ -24,15 +24,14 @@ h3 {
 
 .chat__container {
     background-color: white;
-    width: 60%;
-    height: 65%;
+    width: 600px;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-content: center;
     margin: 5rem auto;
     flex-direction: column;
     background: #2e2e2e;
-    /* background: radial-gradient(circle, rgba(255,161,3,1) 0%, rgba(131,3,26,1) 100%); */
     border-radius: 15px;
     font-size: 1.2em;
 }
@@ -42,7 +41,7 @@ h3 {
     align-items: center;
 }
 .card {
-    width: 90%;
+    width: 95%;
     height: 14%;
     background-color:cornsilk;
     margin: 1rem auto;
@@ -64,14 +63,61 @@ h3 {
     justify-content: flex-start;
 }
 
-.input textarea {
+/* div.input {
     margin-top: 3%;
     margin-left: 25%;
     display: flex;
+    flex-direction: row;
     background-color: darkgray;
     height: 600px;
     width: 75%;
     border-radius: 10px;
     resize: none;
     font-size: 2rem;
+}*/
+
+div.input {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+div.input div textarea {
+    resize: none;
+    display: flex;
+    margin: 0px;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+}
+
+div.input .name textarea {
+    background-color: darkgray;
+    width: 150px;
+    stroke-width: 1;
+    stroke: #2e2e2e;
+    max-height: 86px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    line-height: 86px;
+}
+
+div.input .msg textarea  {
+    width: 396px;
+    background-color: darkgray;
+    stroke-width: 1;
+    stroke: #2e2e2e;
+    max-height: 86px;
+    border-bottom-right-radius: 5px;
+    line-height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+div.input .msg textarea::placeholder  {
+    text-align: center;
+    line-height: 86px;
 }

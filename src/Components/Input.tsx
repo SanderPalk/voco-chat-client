@@ -15,7 +15,7 @@ const Input: React.FunctionComponent = () => {
 
   useEffect(() => {
     if (textareaRef && textareaRef.current) {
-      textareaRef.current.style.height = "85px";
+      textareaRef.current.style.height = "86px";
       const scrollHeight = textareaRef.current.scrollHeight;
       textareaRef.current.style.height = scrollHeight + "px";
     }
@@ -24,6 +24,7 @@ const Input: React.FunctionComponent = () => {
   return (
     <div className="msg">
       <textarea
+        placeholder="Write something..."
         ref={textareaRef}
         onChange={textAreaChange} >
         {value}

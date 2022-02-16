@@ -18,8 +18,12 @@ const Chat: React.FC = () => {
                 })}
 
                 <div className='input'>
-                    <Input />
-                    <Name />
+                    <div className='name'>
+                        <Name />
+                    </div>
+                    <div className='msg'>
+                        <Input />
+                    </div>    
                 </div>
             </div>
 

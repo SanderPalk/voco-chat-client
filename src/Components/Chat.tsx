@@ -4,6 +4,7 @@ import data from '../data.json';
 import ChatCard from './ChatCard';
 import Input from './Input';
 import Name from './Name';
+import Send from './Send2';
 
 const Chat: React.FC = () => {
     return (
@@ -25,12 +26,14 @@ const Chat: React.FC = () => {
                         <Input />
                     </div>    
                 </div>
+                < Send/>
             </div>
-
+            
             
 
         </div>
     );
 }
+
 
 export default Chat;

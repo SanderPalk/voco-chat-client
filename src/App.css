@@ -121,3 +121,8 @@ div.input .msg textarea::placeholder  {
     text-align: center;
     line-height: 86px;
 }
+
+div.sendbutton {
+    margin: 0;
+    padding-left: 0;
+}

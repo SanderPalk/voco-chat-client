@@ -6,7 +6,7 @@ const Input: React.FunctionComponent = () => {
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
 
   // The value of the textarea
-  const [value, setValue] = useState<String>();
+  const [value2, setValue] = useState<String>();
 
   // This function is triggered when textarea changes
   const textAreaChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -19,7 +19,7 @@ const Input: React.FunctionComponent = () => {
       const scrollHeight = textareaRef.current.scrollHeight;
       textareaRef.current.style.height = scrollHeight + "px";
     }
-  }, [value]);
+  }, [value2]);
 
   return (
     <div className="msg">
@@ -27,11 +27,11 @@ const Input: React.FunctionComponent = () => {
         placeholder="Write something..."
         ref={textareaRef}
         onChange={textAreaChange} >
-        {value}
+        {value2}
       </textarea>
     </div>
   );
 };
 
+export let value2: any;
 export default Input;
-

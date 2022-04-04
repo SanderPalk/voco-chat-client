@@ -2,9 +2,6 @@ import React from 'react';
 import '../App.css';
 import data from '../data.json';
 import ChatCard from './ChatCard';
-import Input from './Input';
-import Name from './Name';
-import Send from './Send2';
 
 const Chat: React.FC = () => {
     return (
@@ -18,22 +15,9 @@ const Chat: React.FC = () => {
                     )
                 })}
 
-                <div className='input'>
-                    <div className='name'>
-                        <Name />
-                    </div>
-                    <div className='msg'>
-                        <Input />
-                    </div>    
-                </div>
-                < Send/>
             </div>
-            
-            
-
         </div>
     );
 }
-
 
 export default Chat;

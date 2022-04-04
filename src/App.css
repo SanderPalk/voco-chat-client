@@ -1,128 +1,84 @@
-* {
-    margin: 0;
-    padding: 0;
+.App {
+  text-align: ;
 }
 
-html {
-    font-size: 62.5%;
+.background {
+  height: 100vh;
+  background: rgb(209,100,1);
+  background: radial-gradient(circle, rgba(209,100,1,1) 0%, rgba(131,3,26,1) 100%);
+  display: flex;
+  align-items: middle;
 }
 
-.chat {
-    height: 150vh;
-    background-color: black;
-    background: rgb(0,251,191);
-    background: radial-gradient(circle, rgba(0,251,191,1) 0%, rgba(53,192,201,1) 51%, rgba(0,251,191,1) 100%);
+.msg{
+  border: 2px solid grey;
+  border-radius: 7px;
+  color: white;
+  margin: 12px 30px;
+  padding: 5px;
+  background-color: darkgray;
+
 }
 
-h3 {
-    color: white;
-    font-weight: bold;
-    font-size: 2rem;
-    padding-top: 1.5rem;
-    padding-left: 1.5rem;
+.box{
+  background-color: #424242;
 }
 
-.chat__container {
-    background-color: white;
-    width: 600px;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 5rem auto;
-    flex-direction: column;
-    background: #2e2e2e;
-    border-radius: 15px;
-    font-size: 1.2em;
-}
-.contaienr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card {
-    width: 95%;
-    height: 14%;
-    background-color:cornsilk;
-    margin: 1rem auto;
-    border-radius: 15px;
+.container{
+  display: flex;
 }
 
-.card__message {
-    font-size: 1rem;
-    width: 90%;
-    margin: auto;
-    margin: 2rem 2rem 2rem auto;
+.contentbox{
+  background-color: black;
+  border-radius: 10px;
+  margin:60px;
+  padding: 5px;
+  height: 500px;
+  overflow: scroll;
+  display: flex;
+  width: 60%;
+  position: fixed;
+  
 }
-.card__group  {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin: auto;
-    margin: auto auto 1rem auto;
-    justify-content: flex-start;
+.inputbox{
+  position: fixed;
+  bottom: 19px;
+  display: flex;
+  flex-direction: row;
+  float:left;
+
 }
-
-/* div.input {
-    margin-top: 3%;
-    margin-left: 25%;
-    display: flex;
-    flex-direction: row;
-    background-color: darkgray;
-    height: 600px;
-    width: 75%;
-    border-radius: 10px;
-    resize: none;
-    font-size: 2rem;
-}*/
-
-div.input {
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-    padding: 0px;
-    margin-top: 15px;
-    width: 100%;
+.inputfieldname{
+  padding: 20px 0px;
+  width: 100px;
+  float:left;
+  border: 2px solid white;
+  margin-left: 0px;
+  margin-right: 6px;
+  color: black;
+  font-weight: bold;
+  padding-left: 10px;
+  text-align: center;
 }
 
-div.input div textarea {
-    resize: none;
-    display: flex;
-    margin: 0px;
-    margin-top: 0;
-    padding: 0;
-    width: 100%;
+.inputfieldmsg{
+  padding: 20px 0px;
+  width: 640px;
+  float:left;
+  border: 2px solid white;
+  margin-right: 2px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
 }
-
-div.input .name textarea {
-    background-color: darkgray;
-    width: 150px;
-    stroke-width: 1;
-    stroke: #2e2e2e;
-    max-height: 86px;
-    border-bottom-left-radius: 5px;
-    text-align: center;
-    line-height: 86px;
-}
-
-div.input .msg textarea  {
-    width: 396px;
-    background-color: darkgray;
-    stroke-width: 1;
-    stroke: #2e2e2e;
-    max-height: 86px;
-    border-bottom-right-radius: 5px;
-    line-height: 40px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-div.input .msg textarea::placeholder  {
-    text-align: center;
-    line-height: 86px;
-}
-
-div.sendbutton {
-    margin: 0;
-    padding-left: 0;
+.buttonsend{
+  padding: 20px 0;
+  width: 10%;
+  float:initial;
+  border: 2px solid white;
+  border-radius: 5%;
+  margin-left: 2px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
 }
